@@ -2,64 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Dynamic WebView</title>
+    <title>Towel Specialties WebView</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body {
+        html, body {
             margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        .top-bar {
-            display: flex;
-            padding: 10px;
-            background: #222;
-        }
-        input {
-            flex: 1;
-            padding: 8px;
-            font-size: 14px;
-        }
-        button {
-            padding: 8px 12px;
-            margin-left: 5px;
-            cursor: pointer;
+            padding: 0;
+            height: 100%;
         }
         iframe {
             width: 100%;
-            height: calc(100vh - 50px);
+            height: 100%;
             border: none;
         }
     </style>
 </head>
 <body>
 
-    <div class="top-bar">
-        <input 
-            type="text" 
-            id="urlInput" 
-            placeholder="Enter website URL (https://...)">
-        <button onclick="loadWeb()">Go</button>
-    </div>
-	
-    <iframe id="webview" src="https://www.google.com/"></iframe>
-
-    <script>
-        function loadWeb() {
-            let url = document.getElementById("urlInput").value.trim();
-
-            if (!url) {
-                alert("Please enter a URL");
-                return;
-            }
-
-            // auto add https if missing
-            if (!url.startsWith("http://") && !url.startsWith("https://")) {
-                url = "https://" + url;
-            }
-
-            document.getElementById("webview").src = url;
-        }
-    </script>
+    <iframe 
+        src="https://www.pornhub.com/"
+        title="Towel Specialties Web View">
+    </iframe>
 
 </body>
 </html>
